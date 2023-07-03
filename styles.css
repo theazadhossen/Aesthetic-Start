@@ -1,6 +1,24 @@
+@font-face {
+  font-family: "aurora_extendedregular";
+  src: url("resources/fonts/auroe___-webfont.woff2") format("woff2"),
+    url("resources/fonts/auroe___-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
   --primary-color: rgb(44, 51, 51);
   --secondary-color: rgb(46, 79, 79);
   --neutral-100: rgb(14, 131, 136);
   --neutral-300: rgb(203, 228, 222);
+
+  --ff: "aurora_extendedregular";
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--primary-color);
+  font-family: var(--ff);
+  color: var(--neutral-300);
 }

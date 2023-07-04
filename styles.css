@@ -15,10 +15,43 @@
   --ff: "aurora_extendedregular";
 }
 
+/* css stylesheet reset */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* custom stylesheet */
 body {
   width: 100%;
   height: 100vh;
   background-color: var(--primary-color);
-  font-family: var(--ff);
+  font-family: var(--ff) !important;
   color: var(--neutral-300);
 }
